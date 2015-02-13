@@ -12,7 +12,11 @@ public class OI {
 
 	public OI(){
 		//SmartDashboard Buttons
-		SmartDashboard.putData("Avoid Brownout", new AvoidBrownout());
+		SmartDashboard.putData("Masts", new SetLeds(0));
+		SmartDashboard.putData("Ring", new SetLeds(1));
+		SmartDashboard.putData("Idle", new SetLeds(2));
+		SmartDashboard.putData("Brownout", new SetLeds(3));
+		SmartDashboard.putData("Gyro", new SetLeds(4));
 	}
 }
 

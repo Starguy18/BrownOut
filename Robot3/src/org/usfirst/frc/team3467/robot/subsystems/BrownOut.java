@@ -8,7 +8,7 @@ import org.usfirst.frc.team3467.robot.RobotMap;
 public class BrownOut extends Subsystem {
 	
 	public static PowerDistributionPanel PDP = RobotMap.BrownOutPowerDistributionPanelPDP;
-
+	public static double Voltage =  BrownOut.PDP.getVoltage();
 	protected void initDefaultCommand() {
 		
 	}
