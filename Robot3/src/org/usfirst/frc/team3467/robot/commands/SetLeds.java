@@ -24,7 +24,7 @@ public class SetLeds extends Command{
 			Leds.setState("Masts", 'l', 0);
 			break;
 		case 1:
-			Leds.setState("Ring", 'l', 2);
+			Leds.setState("Ring", 'l', 1);
 		case 2:
 			Leds.setState("Idle", 'd', 0);
 			break;
@@ -57,6 +57,17 @@ public class SetLeds extends Command{
 				Leds.setState("Very Low", 'v', 1);
 			}
 			break;
+		case 7: 
+			Leds.setState("Indexer Actuator In", 'd', 4);
+			break;
+		case 8:
+			Leds.setState("Indexer Actuator Inative", 'd', 5);
+			break;
+		case 9:
+			Leds.setState("Encoder Fault", 'd', 6);
+			break;
+		case 10:
+			
 		}
 	}
 
